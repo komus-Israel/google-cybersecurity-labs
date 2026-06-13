@@ -9,7 +9,7 @@
 ## 🎯 Project Overview
 The business is preparing to launch a mobile app that makes it easy for their customers to buy and sell shoes. 
 
-I performed a threat model of the application using the PASTA framework. Using each of the seven stages of the framework, I identified security requirements for the new sneaker company app.
+I performed a threat model of the application using the PASTA framework. Using each of the seven stages of the framework, I identified the security requirements for the new sneaker company app.
 
 ---
 
@@ -30,11 +30,11 @@ Mapped the attack surface across the entire application ecosystem, identifying k
 
 
 ### Step 4: Threat Analysis
-* **Session Hijacking:** Attackers targeting the cookie/token management ecosystem to steal valid user session identifiers. During high-traffic drops, hijacking an authenticated session allows attackers to bypass queue systems and complete fraudulent checkouts as legitimate users.
-* **SQL Injection (SQLi):** Malicious inputs supplied to search bars, checkout fields, or inventory filters aimed at manipulating backend database queries to read, modify, or delete sensitive relational tables.
+* **Session Hijacking:** Attackers targeting the cookie/token management ecosystem to steal valid user session identifiers.
+* **SQL Injection (SQLi):** Malicious inputs supplied to search bars, checkout fields, or inventory filters aimed at manipulating backend database queries to read, modify, or delete sensitive data.
 
 ### Step 5: Vulnerability Analysis
-* **No Prepared Statements (SQLi Vector)** 
+* **No Prepared Statements (SQL injection Vector)** 
 * **Database Connections Not Closed** 
 
 ### Step 6: Attack Modeling 
